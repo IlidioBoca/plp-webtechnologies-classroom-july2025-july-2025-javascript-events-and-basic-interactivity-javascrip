@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Cadastro de Alunos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistema de Cadastro de Alunos</h1>
+    <button id="toggleThemeBtn">🌙 Modo Escuro</button>
+  </header>
+
+  <main>
+    <!-- Seção 1: Formulário de Cadastro -->
+    <section id="form-section">
+      <h2>Cadastrar Novo Aluno</h2>
+      <form id="studentForm">
+        <label for="studentName">Nome completo:</label>
+        <input type="text" id="studentName" placeholder="Ex: Maria João" />
+
+        <label for="studentEmail">Email:</label>
+        <input type="text" id="studentEmail" placeholder="exemplo@email.com" />
+
+        <label for="studentAge">Idade:</label>
+        <input type="number" id="studentAge" placeholder="Ex: 20" />
+
+        <label for="studentCourse">Curso:</label>
+        <input type="text" id="studentCourse" placeholder="Ex: Logística" />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+      <p id="formFeedback"></p>
+    </section>
+
+    <!-- Seção 2: Lista de Alunos -->
+    <section id="list-section">
+      <h2>Lista de Alunos Cadastrados</h2>
+      <ul id="studentList"></ul>
+      <button id="clearListBtn">🗑️ Limpar Lista</button>
+    </section>
+
+    <!-- Seção 3: Contador de Alunos -->
+    <section id="counter-section">
+      <h2>Total de Alunos Cadastrados: <span id="studentCount">0</span></h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sistema de Cadastro de Alunos — Desenvolvido por Ilídio Boca</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
